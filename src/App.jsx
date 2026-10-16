@@ -4,18 +4,20 @@ function App() {
     <div className="container">
       <header className="hero">
         <h1>Ahmad Abbas</h1>
-        <h2>Backend Developer</h2>
+        <h2>M2 Computer Science Student | Backend, AI & Cybersecurity</h2>
         <p>
-          Computer Science graduate focused on backend development, APIs,
-          databases, and scalable web applications.
+          M2 student at the University of Lille specializing in cybersecurity
+          from cloud to edge. I build backend systems and applied AI projects,
+          with experience in APIs, databases, distributed applications, and
+          machine learning.
         </p>
 
         <div className="buttons">
           <a href="#projects">View Projects</a>
-          <a href="https://github.com/ahmadabbass11" target="_blank">
+          <a href="https://github.com/ahmadabbass11" target="_blank" rel="noreferrer">
             GitHub
           </a>
-          <a href="https://www.linkedin.com/in/ahmad-abbass" target="_blank">
+          <a href="https://www.linkedin.com/in/ahmad-abbass" target="_blank" rel="noreferrer">
             LinkedIn
           </a>
         </div>
@@ -24,10 +26,11 @@ function App() {
       <section>
         <h2>About Me</h2>
         <p>
-          I am a Computer Science graduate with experience building backend
-          systems using Java, Springboot, Laravel, PHP, MySQL, Redis, Docker, and REST APIs.
-          I enjoy working on database-heavy applications, real-time features,
-          and clean backend architecture.
+          I’m a master’s student at the University of Lille, focused on
+          cybersecurity, cloud, and edge computing. My experience includes a
+          backend development internship and projects in backend engineering,
+          machine learning, and federated anomaly detection. I enjoy building
+          reliable systems and investigating how to make them more secure.
         </p>
       </section>
 
@@ -35,24 +38,30 @@ function App() {
         <h2>Skills</h2>
         <div className="skills">
           <span>Java</span>
-          <span>Spring Boot</span>
-          <span>Laravel</span>
+          <span>Python</span>
           <span>PHP</span>
           <span>Rust</span>
-          <span>Python</span>
           <span>C</span>
           <span>C++</span>
           <span>JavaScript</span>
+          <span>Laravel</span>
+          <span>FastAPI</span>
+          <span>Django</span>
+          <span>Spring Boot</span>
           <span>REST APIs</span>
-          <span>JWT</span>
-          <span>Redis</span>
+          <span>Machine Learning</span>
+          <span>Federated Learning</span>
           <span>MySQL</span>
-          <span>MongoDB</span>
           <span>PostgreSQL</span>
+          <span>MongoDB</span>
+          <span>Redis</span>
           <span>Docker</span>
+          <span>Linux</span>
           <span>Git</span>
           <span>CI/CD</span>
-          <span>Linux</span>
+          <span>Ghidra</span>
+          <span>pwndbg</span>
+          <span>Volatility</span>
         </div>
       </section>
 
@@ -296,6 +305,79 @@ function App() {
               Improved organization and communication by replacing manual tracking with
               a structured web-based system.
             </li>
+          </ul>
+        </div>
+
+
+        <div className="project">
+          <h3>AI-Powered Resume Analyzer</h3>
+          <p>
+            An AI application that analyzes resumes, classifies candidate profiles, and
+            compares resumes with job descriptions using semantic similarity.
+          </p>
+          <p>
+            <strong>Tech:</strong> Python, scikit-learn, TF-IDF, Sentence-BERT,
+            BART, spaCy, Streamlit
+          </p>
+          <ul>
+            <li>Built a resume analysis application using a dataset of 962 resumes.</li>
+            <li>Implemented resume classification with TF-IDF features and an SVM classifier.</li>
+            <li>Used Sentence-BERT embeddings to compare resumes with job descriptions.</li>
+            <li>Integrated BART summarization and spaCy extraction of named entities and skills.</li>
+            <li>Created a Streamlit interface for resume uploads, candidate matching, and results.</li>
+          </ul>
+        </div>
+
+        <div className="project">
+          <h3>Context-Aware Federated Anomaly Detection</h3>
+          <p>
+            A federated network anomaly-detection project exploring whether contextual
+            traffic features improve detection while keeping raw client data decentralized.
+          </p>
+          <p>
+            <strong>Methods:</strong> FedML, federated autoencoders, network traffic
+            feature engineering, validation-based evaluation
+          </p>
+          <ul>
+            <li>Adapted a FedML federated autoencoder pipeline from BaIoT/N-BaIoT to ToN_IoT.</li>
+            <li>Engineered contextual features for protocols, services, ports, DNS activity, and client behavior.</li>
+            <li>Compared traffic-only and context-aware models using precision, recall, F1, detection rate, and false-positive rate.</li>
+            <li>Implemented validation-only selection and a separate final-test evaluation to prevent test-set leakage.</li>
+          </ul>
+        </div>
+
+        <div className="project">
+          <h3>ArcVault - Intelligent Message Classification and Routing</h3>
+          <p>
+            An AI workflow that turns unstructured messages into structured requests with
+            a category, priority, urgency level, and summary.
+          </p>
+          <p>
+            <strong>Focus:</strong> Information extraction, prioritization, department routing, escalation rules
+          </p>
+          <ul>
+            <li>Extracted requirements and identifiers from incoming messages.</li>
+            <li>Routed requests to the appropriate department.</li>
+            <li>Triggered escalation rules based on request priority.</li>
+            <li>Produced structured records for request tracking and automated processing.</li>
+          </ul>
+        </div>
+
+        <div className="project">
+          <h3>ContractFlow - Contract Management Platform</h3>
+          <p>
+            A SaaS platform for organizations to centralize contracts, manage members and
+            roles, and securely track contract information.
+          </p>
+          <p>
+            <strong>Tech:</strong> FastAPI, SQLAlchemy, Pydantic, PostgreSQL,
+            Alembic, JWT, Docker Compose
+          </p>
+          <ul>
+            <li>Designed a modular REST API organized into API, service, schema, and model layers.</li>
+            <li>Designed a multi-organization PostgreSQL data model and managed migrations with Alembic.</li>
+            <li>Implemented JWT authentication and role-based access control.</li>
+            <li>Containerized the API and database with Docker Compose.</li>
           </ul>
         </div>
 
