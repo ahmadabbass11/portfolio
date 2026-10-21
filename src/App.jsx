@@ -1,4 +1,7 @@
 import './App.css';
+
+const ragBadgeUrl = 'https://www.credly.com/badges/e40e7446-b4d1-4c4e-9ed4-aece0450f8f7';
+
 function App() {
   return (
     <div className="container">
@@ -9,11 +12,15 @@ function App() {
           M2 student at the University of Lille specializing in cybersecurity
           from cloud to edge. I build backend systems and applied AI projects,
           with experience in APIs, databases, distributed applications, and
-          machine learning.
+          machine learning. My current work combines LLM integration, retrieval-augmented
+          generation (RAG), and hands-on security labs.
         </p>
 
         <div className="buttons">
           <a href="#projects">View Projects</a>
+          <a href="#ai-practice">AI Practice</a>
+          <a href="#security-practice">Security Labs</a>
+          <a href="#certifications">Certificates</a>
           <a href="https://github.com/ahmadabbass11" target="_blank" rel="noreferrer">
             GitHub
           </a>
@@ -30,7 +37,11 @@ function App() {
           cybersecurity, cloud, and edge computing. My experience includes a
           backend development internship and projects in backend engineering,
           machine learning, and federated anomaly detection. I enjoy building
-          reliable systems and investigating how to make them more secure.
+          reliable systems and investigating how to make them more secure. I’m
+          developing practical skills in LangChain, LangGraph, and LlamaIndex through
+          focused exercises in document retrieval, tool calling, and structured LLM
+          outputs. My security practice includes binary exploitation, reverse
+          engineering, and memory forensics in controlled lab environments.
         </p>
       </section>
 
@@ -62,6 +73,95 @@ function App() {
           <span>Ghidra</span>
           <span>pwndbg</span>
           <span>Volatility</span>
+          <span>Generative AI</span>
+          <span>RAG</span>
+          <span>LangChain</span>
+          <span>LangGraph</span>
+          <span>LlamaIndex</span>
+          <span>Embeddings</span>
+          <span>Chroma</span>
+          <span>Prompt Engineering</span>
+          <span>LLM Tool Calling</span>
+          <span>Pydantic</span>
+          <span>Gradio</span>
+          <span>Binary Exploitation</span>
+          <span>Reverse Engineering</span>
+          <span>Memory Forensics</span>
+          <span>pwntools</span>
+          <span>GDB</span>
+          <span>x86 / x86-64</span>
+          <span>ROP</span>
+        </div>
+      </section>
+
+      <section id="ai-practice">
+        <h2>Generative AI &amp; RAG Practice</h2>
+        <p>Hands-on learning through focused prototypes and practical exercises.</p>
+        <div className="project">
+          <h3>LLM Integration &amp; Tool Calling</h3>
+          <p><strong>Tech:</strong> Python, FastAPI, Pydantic, LLM APIs, LangChain, LangGraph</p>
+          <ul>
+            <li>Built a FastAPI job-analysis prototype with structured outputs for skill matching and candidate fit.</li>
+            <li>Integrated a project-lookup tool to provide relevant candidate project information during analysis.</li>
+            <li>Practiced prompt templates, output parsing, streaming, and input validation.</li>
+            <li>Explored LangGraph state, message history, conditional routing, and tool execution.</li>
+          </ul>
+        </div>
+        <div className="project">
+          <h3>Document Retrieval &amp; RAG</h3>
+          <p><strong>Tech:</strong> LangChain, LlamaIndex, Chroma, embeddings, Gradio</p>
+          <ul>
+            <li>Practiced loading PDFs, splitting text into overlapping chunks, generating embeddings, and indexing content.</li>
+            <li>Used vector similarity search to retrieve relevant passages for LLM question answering.</li>
+            <li>Explored parent-document retrieval: searching smaller chunks and returning larger passages as context.</li>
+            <li>Worked with LlamaIndex documents, nodes, vector indexes, and query engines.</li>
+            <li>Experimented with Gradio interfaces for document question answering.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="security-practice">
+        <h2>Security Labs &amp; Systems Practice</h2>
+        <p>Academic exercises and authorized challenges on pwn.college, OverTheWire, and local lab binaries.</p>
+        <div className="project">
+          <h3>Binary Exploitation &amp; Reverse Engineering</h3>
+          <p><strong>Tools:</strong> C, Python, pwntools, GDB, pwndbg, Ghidra, x86 / x86-64</p>
+          <ul>
+            <li>Solved 32-bit and 64-bit challenges involving stack buffer overflows, format strings, ret2win, and return-oriented programming.</li>
+            <li>Analyzed NX, ASLR, PIE, stack canaries, and RELRO, and practiced mitigation bypasses in controlled labs.</li>
+            <li>Used information leaks, GOT/PLT analysis, and ret2libc techniques to understand memory-corruption vulnerabilities.</li>
+            <li>Inspected assembly, stack layouts, and process memory mappings to debug and explain exploit behavior.</li>
+          </ul>
+        </div>
+        <div className="project">
+          <h3>Memory Forensics &amp; Linux Systems</h3>
+          <p><strong>Tools:</strong> Volatility, Linux, C</p>
+          <ul>
+            <li>Practiced memory forensics with Volatility to investigate botnet-related activity.</li>
+            <li>Studied the use of AES and RSA in ransomware as part of security coursework.</li>
+            <li>Implemented a Linux character-device exercise with a ring buffer, sysfs configuration, and spinlock synchronization.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="certifications">
+        <h2>Certificates &amp; Badges</h2>
+        <div className="project">
+          <h3>Develop Generative AI Applications: Get Started</h3>
+          <p>IBM · Coursera · Completed October 19, 2026</p>
+          <a href="https://coursera.org/verify/6K18O8I1KDCD" target="_blank" rel="noreferrer">Verify certificate</a>
+        </div>
+        <div className="project">
+          <h3>Build RAG Applications: Get Started</h3>
+          <p>IBM · Coursera · Completed October 21, 2026</p>
+          <a href="https://coursera.org/verify/8S09G8C9K8VA" target="_blank" rel="noreferrer">Verify certificate</a>
+        </div>
+        <div className="project">
+          <h3>RAG Digital Badge</h3>
+          <p>Credly</p>
+          {ragBadgeUrl && (
+            <a href={ragBadgeUrl} target="_blank" rel="noreferrer">View badge on Credly</a>
+          )}
         </div>
       </section>
 
@@ -416,10 +516,6 @@ function App() {
             <li>
               Optimized backend performance using Laravel Octane and Redis, reaching
               over 1800 requests per second in performance testing.
-            </li>
-            <li>
-              Implemented CI/CD pipelines that reduced deployment time by 75% and
-              improved the release workflow.
             </li>
             <li>
               Built Docker-based development environments to make local setup more
