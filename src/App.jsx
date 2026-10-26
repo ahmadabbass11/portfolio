@@ -157,6 +157,11 @@ function App() {
           <a href="https://coursera.org/verify/8S09G8C9K8VA" target="_blank" rel="noreferrer">Verify certificate</a>
         </div>
         <div className="project">
+          <h3>Vector Databases for RAG: An Introduction</h3>
+          <p>IBM · Coursera · Completed October 23, 2026</p>
+          <a href="https://coursera.org/verify/MXOLJCAH7IXA" target="_blank" rel="noreferrer">Verify certificate</a>
+        </div>
+        <div className="project">
           <h3>RAG Digital Badge</h3>
           <p>Credly</p>
           {ragBadgeUrl && (
