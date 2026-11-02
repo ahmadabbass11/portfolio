@@ -11,7 +11,7 @@ function App() {
     <div className="container">
       <header className="hero">
         <h1>Ahmad Abbas</h1>
-        <h2>M2 Computer Science Student | Backend, AI & Cybersecurity</h2>
+        <h2>M2 Cybersecurity Student | Application Security, Reverse Engineering & Applied AI</h2>
 
         <div className="buttons">
           <a href="#projects">View Projects</a>
@@ -38,62 +38,84 @@ function App() {
         </p>
       </header>
 
-      <section>
+      <section id="skills">
         <h2>Skills</h2>
+
+        <h3>Security</h3>
+        <div className="skills">
+          <span>Application Security</span>
+          <span>Binary Exploitation</span>
+          <span>Reverse Engineering</span>
+          <span>Memory Forensics</span>
+          <span>SAST</span>
+          <span>DAST</span>
+          <span>OWASP Top 10</span>
+          <span>CVSS Scoring</span>
+          <span>ISO 27001 Fundamentals</span>
+          <span>Burp Suite</span>
+          <span>OWASP ZAP</span>
+          <span>CodeQL</span>
+          <span>Semgrep</span>
+          <span>SpotBugs</span>
+          <span>Bandit</span>
+          <span>Ghidra</span>
+          <span>GDB</span>
+          <span>pwndbg</span>
+          <span>pwntools</span>
+          <span>Volatility 3</span>
+          <span>ROP</span>
+        </div>
+
+        <h3>Languages &amp; Systems</h3>
         <div className="skills">
           <span>Python</span>
-          <span>Java</span>
-          <span>PHP</span>
-          <span>Rust</span>
           <span>C</span>
           <span>C++</span>
+          <span>Rust</span>
+          <span>Java</span>
+          <span>PHP</span>
           <span>JavaScript</span>
+          <span>x86 / x86-64 Assembly</span>
+          <span>Linux</span>
+          <span>Git</span>
+          <span>Docker</span>
+        </div>
+
+        <h3>Backend</h3>
+        <div className="skills">
           <span>Laravel</span>
+          <span>Lumen</span>
           <span>FastAPI</span>
           <span>Django</span>
           <span>REST APIs</span>
-          <span>Machine Learning</span>
-          <span>Federated Learning</span>
+          <span>JWT Authentication</span>
+          <span>Role-Based Access Control</span>
           <span>MySQL</span>
           <span>PostgreSQL</span>
           <span>MongoDB</span>
           <span>Redis</span>
-          <span>Docker</span>
-          <span>Linux</span>
-          <span>Git</span>
+          <span>WebSockets</span>
+          <span>Pydantic</span>
           <span>CI/CD</span>
-          <span>Ghidra</span>
-          <span>pwndbg</span>
-          <span>Volatility</span>
+          <span>GitHub Actions</span>
+        </div>
+
+        <h3>AI</h3>
+        <div className="skills">
+          <span>Machine Learning</span>
+          <span>Federated Learning</span>
           <span>Generative AI</span>
           <span>RAG</span>
           <span>LangChain</span>
           <span>LangGraph</span>
           <span>LlamaIndex</span>
           <span>Embeddings</span>
-          <span>Chroma</span>
+          <span>ChromaDB</span>
+          <span>Semantic Search</span>
           <span>Prompt Engineering</span>
           <span>LLM Tool Calling</span>
-          <span>Pydantic</span>
+          <span>Structured LLM Outputs</span>
           <span>Gradio</span>
-          <span>Binary Exploitation</span>
-          <span>Reverse Engineering</span>
-          <span>Memory Forensics</span>
-          <span>pwntools</span>
-          <span>GDB</span>
-          <span>x86 / x86-64</span>
-          <span>ROP</span>
-          <span>ISO 27001</span>
-          <span>SAST</span>
-          <span>DAST</span>
-          <span>CVSS Scoring</span>
-          <span>OWASP Top 10 Vulnerabilities</span>
-          <span>OWASP ZAP</span>
-          <span>CodeQL</span>
-          <span>Semgrep</span>
-          <span>SpotBugs</span>
-          <span>Bandit</span>
-          <span>GitHub Actions</span>
         </div>
       </section>
 
@@ -198,13 +220,48 @@ function App() {
         <div className="project">
           <h3>Binary Exploitation &amp; Reverse Engineering</h3>
           <p><strong>Tools:</strong> C, Python, pwntools, GDB, pwndbg, Ghidra, x86 / x86-64</p>
-          <p><strong>Practice platforms:</strong> Root-Me, pwn.college, Hack The Box (HTB)</p>
+          <p><strong>Practice platforms:</strong> Root-Me, pwn.college, Hack The Box (HTB), CyLab Academy (PicoCTF)</p>
           <ul>
             <li>Solved 32-bit and 64-bit challenges involving stack buffer overflows, format strings, ret2win, and return-oriented programming.</li>
             <li>Analyzed NX, ASLR, PIE, stack canaries, and RELRO, and practiced mitigation bypasses in controlled labs.</li>
             <li>Used information leaks, GOT/PLT analysis, and ret2libc techniques to understand memory-corruption vulnerabilities.</li>
             <li>Inspected assembly, stack layouts, and process memory mappings to debug and explain exploit behavior.</li>
           </ul>
+
+          <p>
+            <strong>Practice platforms:</strong>{' '}
+            <a
+              href="https://www.root-me.org/Ahmad-Abbas?lang=fr"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Root-Me
+            </a>
+            {' · '}
+            <a
+              href="https://pwn.college/hacker/ahmadabs183"
+              target="_blank"
+              rel="noreferrer"
+            >
+              pwn.college
+            </a>
+            {' · '}
+            <a
+              href="https://learn.cylabacademy.org/users/ahmadabs183"
+              target="_blank"
+              rel="noreferrer"
+            >
+              CyLab Academy
+            </a>
+          </p>
+
+           <a
+            href="https://github.com/ahmadabbass11/binary-exploitation-labs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View sample reports on GitHub →
+          </a>
         </div>
         <div className="project">
           <h3>Linux Ransomware Analysis</h3>
