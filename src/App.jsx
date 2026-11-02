@@ -12,15 +12,6 @@ function App() {
       <header className="hero">
         <h1>Ahmad Abbas</h1>
         <h2>M2 Computer Science Student | Backend, AI & Cybersecurity</h2>
-        <p>
-          I’m a master’s student at the University of Lille, specializing in cybersecurity, cloud, and edge computing. My background combines a backend development internship with projects in software engineering, applied AI, and security. I’m particularly interested in application security, binary exploitation, and reverse engineering—understanding how systems work, identifying their weaknesses, and investigating how those weaknesses can be exploited and addressed.
-        </p>
-        <p>
-          My hands-on security practice includes analyzing Linux binaries with Ghidra, GDB, and pwndbg, developing exploits for memory-corruption challenges, and investigating process memory with Volatility. My academic projects include recovering an AES key from a ransomware sample through predictable pseudorandom generation and analyzing a Linux botnet’s runtime configuration and credential table. I also practice web application security testing with Burp Suite and OWASP ZAP, investigating authentication flows, access controls, and injection vulnerabilities in controlled lab environments.
-        </p>
-        <p>         
-          Alongside security, I build backend systems involving APIs, databases, authentication, and distributed components. My AI work includes machine learning, federated network anomaly detection, and practical exercises with LangChain, LangGraph, and LlamaIndex for document retrieval, tool calling, and structured LLM outputs. I enjoy connecting these areas to build useful applications, understand their attack surfaces, and improve their reliability and security.
-        </p>
 
         <div className="buttons">
           <a href="#projects">View Projects</a>
@@ -39,15 +30,13 @@ function App() {
       <section>
         <h2>About Me</h2>
         <p>
-          I’m a master’s student at the University of Lille, focused on
-          cybersecurity, cloud, and edge computing. My experience includes a
-          backend development internship and projects in backend engineering,
-          machine learning, and federated anomaly detection. I enjoy building
-          reliable systems and investigating how to make them more secure. I’m
-          developing practical skills in LangChain, LangGraph, and LlamaIndex through
-          focused exercises in document retrieval, tool calling, and structured LLM
-          outputs. My security practice includes binary exploitation, reverse
-          engineering, and memory forensics in controlled lab environments.
+          I’m a master’s student at the University of Lille, specializing in cybersecurity, cloud, and edge computing. My background combines a backend development internship with projects in software engineering, applied AI, and security. I’m particularly interested in application security, binary exploitation, and reverse engineering—understanding how systems work, identifying their weaknesses, and investigating how those weaknesses can be exploited and addressed.
+        </p>
+        <p>
+          My hands-on security practice includes analyzing Linux binaries with Ghidra, GDB, and pwndbg, developing exploits for memory-corruption challenges, and investigating process memory with Volatility. My academic projects include recovering an AES key from a ransomware sample through predictable pseudorandom generation and analyzing a Linux botnet’s runtime configuration and credential table. I also practice web application security testing with Burp Suite and OWASP ZAP, investigating authentication flows, access controls, and injection vulnerabilities in controlled lab environments.
+        </p>
+        <p>         
+          Alongside security, I build backend systems involving APIs, databases, authentication, and distributed components. My AI work includes machine learning, federated network anomaly detection, and practical exercises with LangChain, LangGraph, and LlamaIndex for document retrieval, tool calling, and structured LLM outputs. I enjoy connecting these areas to build useful applications, understand their attack surfaces, and improve their reliability and security.
         </p>
       </section>
 
