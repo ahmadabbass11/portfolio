@@ -25,10 +25,8 @@ function App() {
             LinkedIn
           </a>
         </div>
-      </header>
 
-      <section>
-        <h2>About Me</h2>
+         <h2>About Me</h2>
         <p>
           I’m a master’s student at the University of Lille, specializing in cybersecurity, cloud, and edge computing. My background combines a backend development internship with projects in software engineering, applied AI, and security. I’m particularly interested in application security, binary exploitation, and reverse engineering—understanding how systems work, identifying their weaknesses, and investigating how those weaknesses can be exploited and addressed.
         </p>
@@ -38,13 +36,13 @@ function App() {
         <p>         
           Alongside security, I build backend systems involving APIs, databases, authentication, and distributed components. My AI work includes machine learning, federated network anomaly detection, and practical exercises with LangChain, LangGraph, and LlamaIndex for document retrieval, tool calling, and structured LLM outputs. I enjoy connecting these areas to build useful applications, understand their attack surfaces, and improve their reliability and security.
         </p>
-      </section>
+      </header>
 
       <section>
         <h2>Skills</h2>
         <div className="skills">
-          <span>Java</span>
           <span>Python</span>
+          <span>Java</span>
           <span>PHP</span>
           <span>Rust</span>
           <span>C</span>
@@ -53,7 +51,6 @@ function App() {
           <span>Laravel</span>
           <span>FastAPI</span>
           <span>Django</span>
-          <span>Spring Boot</span>
           <span>REST APIs</span>
           <span>Machine Learning</span>
           <span>Federated Learning</span>
@@ -86,6 +83,17 @@ function App() {
           <span>GDB</span>
           <span>x86 / x86-64</span>
           <span>ROP</span>
+          <span>ISO 27001</span>
+          <span>SAST</span>
+          <span>DAST</span>
+          <span>CVSS Scoring</span>
+          <span>OWASP Top 10 Vulnerabilities</span>
+          <span>OWASP ZAP</span>
+          <span>CodeQL</span>
+          <span>Semgrep</span>
+          <span>SpotBugs</span>
+          <span>Bandit</span>
+          <span>GitHub Actions</span>
         </div>
       </section>
 
