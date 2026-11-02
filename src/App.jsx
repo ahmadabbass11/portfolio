@@ -20,8 +20,9 @@ function App() {
           cybersecurity, cloud, and edge computing. I investigate application
           vulnerabilities, develop exploits in controlled labs, and analyze Linux
           binaries and process memory, building on a background in backend development.
+          I also build applied AI projects involving machine learning, RAG, and LLM applications.
         </p>
-        <p><strong>Seeking a final-year internship in application security, offensive security, or reverse engineering.</strong></p>
+        <p><strong>Seeking a final-year internship in application security, offensive security, reverse engineering, or applied AI.</strong></p>
         <nav className="buttons" aria-label="Portfolio navigation">
           <a href="#security-projects">Security Projects</a>
           <a href="#security-practice">AppSec Labs</a>
