@@ -2,6 +2,10 @@ import './App.css';
 
 const ragBadgeUrl = 'https://www.credly.com/badges/e40e7446-b4d1-4c4e-9ed4-aece0450f8f7';
 
+// Add the published repository URLs here to display project links.
+const ransomwareRepositoryUrl = 'https://github.com/ahmadabbass11/linux-ransomware-analysis';
+const botnetRepositoryUrl = 'https://github.com/ahmadabbass11/linux-botnet-forensics';
+
 function App() {
   return (
     <div className="container">
@@ -9,11 +13,13 @@ function App() {
         <h1>Ahmad Abbas</h1>
         <h2>M2 Computer Science Student | Backend, AI & Cybersecurity</h2>
         <p>
-          M2 student at the University of Lille specializing in cybersecurity
-          from cloud to edge. I build backend systems and applied AI projects,
-          with experience in APIs, databases, distributed applications, and
-          machine learning. My current work combines LLM integration, retrieval-augmented
-          generation (RAG), and hands-on security labs.
+          I’m a master’s student at the University of Lille, specializing in cybersecurity, cloud, and edge computing. My background combines a backend development internship with projects in software engineering, applied AI, and security. I’m particularly interested in application security, binary exploitation, and reverse engineering—understanding how systems work, identifying their weaknesses, and investigating how those weaknesses can be exploited and addressed.
+        </p>
+        <p>
+          My hands-on security practice includes analyzing Linux binaries with Ghidra, GDB, and pwndbg, developing exploits for memory-corruption challenges, and investigating process memory with Volatility. My academic projects include recovering an AES key from a ransomware sample through predictable pseudorandom generation and analyzing a Linux botnet’s runtime configuration and credential table. I also practice web application security testing with Burp Suite and OWASP ZAP, investigating authentication flows, access controls, and injection vulnerabilities in controlled lab environments.
+        </p>
+        <p>         
+          Alongside security, I build backend systems involving APIs, databases, authentication, and distributed components. My AI work includes machine learning, federated network anomaly detection, and practical exercises with LangChain, LangGraph, and LlamaIndex for document retrieval, tool calling, and structured LLM outputs. I enjoy connecting these areas to build useful applications, understand their attack surfaces, and improve their reliability and security.
         </p>
 
         <div className="buttons">
@@ -118,14 +124,84 @@ function App() {
             <li>Experimented with Gradio interfaces for document question answering.</li>
           </ul>
         </div>
+
+
+        <div className="project">
+          <h3>Food Recommendation System — ChromaDB &amp; RAG</h3>
+          <p>
+            A food recommendation project exploring semantic search, structured
+            filtering, and conversational explanations based on food descriptions,
+            nutritional information, and user preferences.
+          </p>
+          <p>
+            <strong>Focus:</strong> ChromaDB, embeddings, NLP, semantic search,
+            metadata filtering, RAG, LLMs, interactive CLI
+          </p>
+          <ul>
+            <li>
+              Explored vector similarity search to retrieve foods matching
+              natural-language preferences.
+            </li>
+            <li>
+              Combined semantic retrieval with metadata filters for criteria
+              such as cuisine, calories, and nutritional values.
+            </li>
+            <li>
+              Organized food descriptions, ingredients, cooking methods, and
+              taste profiles into searchable content and structured metadata.
+            </li>
+            <li>
+              Explored a RAG chatbot that uses retrieved food records to
+              explain recommendations through an interactive CLI.
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section id="security-practice">
         <h2>Security Labs &amp; Systems Practice</h2>
-        <p>Academic exercises and authorized challenges on pwn.college, OverTheWire, and local lab binaries.</p>
+
+        <div className="project">
+          <h3>Application Security &amp; DevSecOps</h3>
+          <p>
+            <strong>Tools:</strong> CodeQL, GitHub Actions, OWASP ZAP, Burp Suite
+          </p>
+          <p>
+            <strong>Focus:</strong> SAST, DAST, authentication, access control,
+            CI/CD security
+          </p>
+          <ul>
+            <li>
+              Integrated CodeQL static application security testing (SAST) into
+              GitHub Actions workflows to identify potential vulnerabilities
+              in source code.
+            </li>
+            <li>
+              Practiced dynamic application security testing (DAST) with OWASP ZAP and Burp Suite,
+              combining application exploration, passive analysis, and targeted
+              active scans in controlled labs.
+            </li>
+            <li>
+              Intercepted and modified HTTP requests to investigate authentication
+              flows, parameter handling, SQL injection, and potential access
+              control weaknesses.
+            </li>
+            <li>
+              Investigated JWT security, including token manipulation and weak
+              signing secrets, in lab environments.
+            </li>
+            <li>
+              Combined automated findings with manual validation to assess
+              application behavior, distinguish false positives, and document
+              security issues.
+            </li>
+          </ul>
+        </div>
+        
         <div className="project">
           <h3>Binary Exploitation &amp; Reverse Engineering</h3>
           <p><strong>Tools:</strong> C, Python, pwntools, GDB, pwndbg, Ghidra, x86 / x86-64</p>
+          <p><strong>Practice platforms:</strong> Root-Me, pwn.college, Hack The Box (HTB)</p>
           <ul>
             <li>Solved 32-bit and 64-bit challenges involving stack buffer overflows, format strings, ret2win, and return-oriented programming.</li>
             <li>Analyzed NX, ASLR, PIE, stack canaries, and RELRO, and practiced mitigation bypasses in controlled labs.</li>
@@ -134,11 +210,47 @@ function App() {
           </ul>
         </div>
         <div className="project">
-          <h3>Memory Forensics &amp; Linux Systems</h3>
+          <h3>Linux Ransomware Analysis</h3>
+          <p>
+            An academic reverse engineering investigation into a Linux ransomware
+            sample and the recovery of an encrypted challenge file.
+          </p>
+          <p><strong>Tools:</strong> Ghidra, C, GCC, OpenSSL, Linux</p>
+          <ul>
+            <li>Reconstructed the encryption workflow and file format, identifying AES-128-CBC encryption and RSA-2048 key wrapping.</li>
+            <li>Identified a timestamp-seeded custom PRNG used to generate per-file AES keys and IVs.</li>
+            <li>Implemented a C recovery tool to search candidate seeds and generator positions, recover the AES key, and decrypt the challenge file.</li>
+            <li>Documented the investigation, failed initial assumptions, recovery method, and validation results.</li>
+          </ul>
+          {ransomwareRepositoryUrl && (
+            <a href={ransomwareRepositoryUrl} target="_blank" rel="noreferrer">
+              View Repository &amp; Technical Report
+            </a>
+          )}
+        </div>
+        <div className="project">
+          <h3>Linux Botnet Memory Forensics</h3>
+          <p>
+            An academic investigation combining Linux memory forensics and reverse
+            engineering to examine suspected botnet activity and recover configuration data.
+          </p>
+          <p><strong>Tools:</strong> Volatility 3, Ghidra, Python, Linux</p>
+          <ul>
+            <li>Investigated process names, parent-child relationships, and extracted executable mappings from a Linux memory image.</li>
+            <li>Analyzed socket-related code and decoded an XOR-obfuscated hostname and destination port.</li>
+            <li>Compared parent and child process memory to locate an initialized runtime credential table.</li>
+            <li>Used Python to extract table entries and decode a selected credential pair, documenting evidence and remaining uncertainties.</li>
+          </ul>
+          {botnetRepositoryUrl && (
+            <a href={botnetRepositoryUrl} target="_blank" rel="noreferrer">
+              View Repository &amp; Technical Report
+            </a>
+          )}
+        </div>
+        <div className="project">
+          <h3>Linux Systems Programming</h3>
           <p><strong>Tools:</strong> Volatility, Linux, C</p>
           <ul>
-            <li>Practiced memory forensics with Volatility to investigate botnet-related activity.</li>
-            <li>Studied the use of AES and RSA in ransomware as part of security coursework.</li>
             <li>Implemented a Linux character-device exercise with a ring buffer, sysfs configuration, and spinlock synchronization.</li>
           </ul>
         </div>
