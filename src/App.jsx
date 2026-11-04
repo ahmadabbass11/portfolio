@@ -27,8 +27,10 @@ function App() {
           <a href="#security-projects">Security Projects</a>
           <a href="#security-practice">AppSec Labs</a>
           <a href="#challenge-profiles">Challenge Profiles</a>
-          <a href="#projects">Other Projects</a>
           <a href="#ai-practice">AI Practice</a>
+          <a href="#projects">Other Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#certifications">Certificates</a>
           <a href="https://github.com/ahmadabbass11" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/ahmad-abbass" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           {cvUrl && <a href={cvUrl} target="_blank" rel="noopener noreferrer">Download CV</a>}
@@ -115,6 +117,9 @@ function App() {
               in source code.
             </li>
             <li>
+              Solved PortSwigger Web Security Academy and OWASP WebGoat challenges, practicing vulnerability identification and exploitation in controlled lab environments.
+            </li>
+            <li>
               Practiced dynamic application security testing (DAST) with OWASP ZAP and Burp Suite,
               combining application exploration, passive analysis, and targeted
               active scans in controlled labs.
@@ -143,6 +148,63 @@ function App() {
           <a href="https://www.root-me.org/Ahmad-Abbas?lang=fr" target="_blank" rel="noopener noreferrer">Root-Me</a>
           <a href="https://pwn.college/hacker/ahmadabs183" target="_blank" rel="noopener noreferrer">pwn.college</a>
           <a href="https://learn.cylabacademy.org/users/ahmadabs183" target="_blank" rel="noopener noreferrer">CyLab Academy</a>
+        </div>
+      </section>
+      <section id="ai-practice">
+        <h2>Generative AI &amp; RAG Practice</h2>
+<p>Hands-on learning through focused prototypes and practical exercises.</p>
+        <div className="project">
+          <h3>LLM Integration &amp; Tool Calling</h3>
+          <p><strong>Tech:</strong> Python, FastAPI, Pydantic, LLM APIs, LangChain, LangGraph</p>
+          <ul>
+            <li>Built a FastAPI job-analysis prototype with structured outputs for skill matching and candidate fit.</li>
+            <li>Integrated a project-lookup tool to provide relevant candidate project information during analysis.</li>
+            <li>Practiced prompt templates, output parsing, streaming, and input validation.</li>
+            <li>Explored LangGraph state, message history, conditional routing, and tool execution.</li>
+          </ul>
+        </div>
+        <div className="project">
+          <h3>Document Retrieval &amp; RAG</h3>
+          <p><strong>Tech:</strong> LangChain, LlamaIndex, Chroma, embeddings, Gradio</p>
+          <ul>
+            <li>Practiced loading PDFs, splitting text into overlapping chunks, generating embeddings, and indexing content.</li>
+            <li>Used vector similarity search to retrieve relevant passages for LLM question answering.</li>
+            <li>Explored parent-document retrieval: searching smaller chunks and returning larger passages as context.</li>
+            <li>Worked with LlamaIndex documents, nodes, vector indexes, and query engines.</li>
+            <li>Experimented with Gradio interfaces for document question answering.</li>
+          </ul>
+        </div>
+
+
+        <div className="project">
+          <h3>Food Recommendation System — ChromaDB &amp; RAG</h3>
+          <p>
+            A food recommendation project exploring semantic search, structured
+            filtering, and conversational explanations based on food descriptions,
+            nutritional information, and user preferences.
+          </p>
+          <p>
+            <strong>Focus:</strong> ChromaDB, embeddings, NLP, semantic search,
+            metadata filtering, RAG, LLMs, interactive CLI
+          </p>
+          <ul>
+            <li>
+              Explored vector similarity search to retrieve foods matching
+              natural-language preferences.
+            </li>
+            <li>
+              Combined semantic retrieval with metadata filters for criteria
+              such as cuisine, calories, and nutritional values.
+            </li>
+            <li>
+              Organized food descriptions, ingredients, cooking methods, and
+              taste profiles into searchable content and structured metadata.
+            </li>
+            <li>
+              Explored a RAG chatbot that uses retrieved food records to
+              explain recommendations through an interactive CLI.
+            </li>
+          </ul>
         </div>
       </section>
       <section id="experience">
@@ -582,75 +644,33 @@ function App() {
           <span>Gradio</span>
         </div>
       </section>
-      <section id="ai-practice">
-        <h2>Generative AI &amp; RAG Practice</h2>
-<p>Hands-on learning through focused prototypes and practical exercises.</p>
-        <div className="project">
-          <h3>LLM Integration &amp; Tool Calling</h3>
-          <p><strong>Tech:</strong> Python, FastAPI, Pydantic, LLM APIs, LangChain, LangGraph</p>
-          <ul>
-            <li>Built a FastAPI job-analysis prototype with structured outputs for skill matching and candidate fit.</li>
-            <li>Integrated a project-lookup tool to provide relevant candidate project information during analysis.</li>
-            <li>Practiced prompt templates, output parsing, streaming, and input validation.</li>
-            <li>Explored LangGraph state, message history, conditional routing, and tool execution.</li>
-          </ul>
-        </div>
-        <div className="project">
-          <h3>Document Retrieval &amp; RAG</h3>
-          <p><strong>Tech:</strong> LangChain, LlamaIndex, Chroma, embeddings, Gradio</p>
-          <ul>
-            <li>Practiced loading PDFs, splitting text into overlapping chunks, generating embeddings, and indexing content.</li>
-            <li>Used vector similarity search to retrieve relevant passages for LLM question answering.</li>
-            <li>Explored parent-document retrieval: searching smaller chunks and returning larger passages as context.</li>
-            <li>Worked with LlamaIndex documents, nodes, vector indexes, and query engines.</li>
-            <li>Experimented with Gradio interfaces for document question answering.</li>
-          </ul>
-        </div>
-
-
-        <div className="project">
-          <h3>Food Recommendation System — ChromaDB &amp; RAG</h3>
-          <p>
-            A food recommendation project exploring semantic search, structured
-            filtering, and conversational explanations based on food descriptions,
-            nutritional information, and user preferences.
-          </p>
-          <p>
-            <strong>Focus:</strong> ChromaDB, embeddings, NLP, semantic search,
-            metadata filtering, RAG, LLMs, interactive CLI
-          </p>
-          <ul>
-            <li>
-              Explored vector similarity search to retrieve foods matching
-              natural-language preferences.
-            </li>
-            <li>
-              Combined semantic retrieval with metadata filters for criteria
-              such as cuisine, calories, and nutritional values.
-            </li>
-            <li>
-              Organized food descriptions, ingredients, cooking methods, and
-              taste profiles into searchable content and structured metadata.
-            </li>
-            <li>
-              Explored a RAG chatbot that uses retrieved food records to
-              explain recommendations through an interactive CLI.
-            </li>
-          </ul>
-        </div>
-      </section>
       <section id="certifications">
         <h2>Certificates &amp; Badges</h2>
-<div className="project">
+
+        <div className="project">
+          <h3>Application Security Testing and Debugging for Developers</h3>
+          <p>Starweaver · Coursera · Completed November 2026</p>
+          <a
+            href="https://coursera.org/verify/4IZ25X53L33Q"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Verify certificate
+          </a>
+        </div>
+
+        <div className="project">
           <h3>Develop Generative AI Applications: Get Started</h3>
           <p>IBM · Coursera · Completed October 19, 2026</p>
           <a href="https://coursera.org/verify/6K18O8I1KDCD" target="_blank" rel="noreferrer">Verify certificate</a>
         </div>
+
         <div className="project">
           <h3>Build RAG Applications: Get Started</h3>
           <p>IBM · Coursera · Completed October 21, 2026</p>
           <a href="https://coursera.org/verify/8S09G8C9K8VA" target="_blank" rel="noreferrer">Verify certificate</a>
         </div>
+        
         <div className="project">
           <h3>Vector Databases for RAG: An Introduction</h3>
           <p>IBM · Coursera · Completed October 23, 2026</p>
