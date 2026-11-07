@@ -1,4 +1,5 @@
 import './App.css';
+import portswiggerProgress from './assets/portswigger-progress.png';
 
 const ragBadgeUrl = 'https://www.credly.com/badges/e40e7446-b4d1-4c4e-9ed4-aece0450f8f7';
 
@@ -140,6 +141,48 @@ function App() {
             </li>
           </ul>
         </div>
+
+        <div className="project">
+          <h3>PortSwigger Web Security Academy — Ongoing Practice</h3>
+
+          <p>
+            Practicing web application vulnerability identification and exploitation
+            using Burp Suite in controlled lab environments.
+          </p>
+
+          <p>
+            <strong>24 labs completed:</strong> 5 Apprentice, 18 Practitioner,
+            and 1 Expert.
+          </p>
+
+          <ul>
+            <li>
+              Practicing SQL injection, including blind techniques and
+              response-based inference.
+            </li>
+            <li>
+              Investigating authentication weaknesses through intercepted
+              and modified HTTP requests.
+            </li>
+            <li>
+              Recording successful approaches, troubleshooting steps,
+              and lessons learned.
+            </li>
+          </ul>
+
+          <a
+            href={portswiggerProgress}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View progress screenshot →
+          </a>
+
+          <p>
+            <small>Last updated: November 7, 2026</small>
+          </p>
+        </div>
+
       </section>
       <section id="challenge-profiles">
         <h2>Challenge Profiles</h2>
